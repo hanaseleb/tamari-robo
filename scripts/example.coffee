@@ -10,37 +10,6 @@
 
 module.exports = (robot) ->
 
-
-
-  enterReplies = ['コンニチハ', 'タマリロボデス', 'ヨウコソ', 'ハロー', 'オハヨウゴザイマス', 'イラッシャイマセ']
-  leaveReplies = ['イッチャウノ？', 'サミシイ', 'マタコンド']
-  
-  robot.enter (res) ->
-    res.send res.reply res.random enterReplies
-
-  robot.leave (res) ->
-    res.send res.reply res.random leaveReplies
-
-  robot.topic (msg) ->
-    msg.send 'トピックが変更されました。'
-
-<<<<<<< HEAD
-  robot.respond /たまり/, (msg) ->
-    msg.send ""
-```
-   Λ＿Λ     ＼＼
-（  ・∀・）  | | ｶﾞｯ
- と     ）  | |
-  Ｙ /ノ     人
-   / ）    < >   _Λ  ∩
-＿/し'   ／／  Ｖ｀Д´）/
-（＿フ彡             / ←>> @#{msg.message.user.name}
-```
-  ""
-
-=======
->>>>>>> parent of 1dc6b40... たまりcommand追加
-
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
