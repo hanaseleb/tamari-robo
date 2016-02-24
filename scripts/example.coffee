@@ -24,6 +24,19 @@ module.exports = (robot) ->
   robot.topic (msg) ->
     msg.send 'トピックが変更されました。'
 
+  robot.respond /たまり/, (msg) ->
+    msg.send """
+```
+   Λ＿Λ     ＼＼
+（  ・∀・）  | | ｶﾞｯ
+ と     ）  | |
+  Ｙ /ノ     人
+   / ）    < >   _Λ  ∩
+＿/し'   ／／  Ｖ｀Д´）/
+（＿フ彡             / ←>> @#{msg.message.user.name}
+```
+  """
+
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
