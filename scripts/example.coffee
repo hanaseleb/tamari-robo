@@ -36,11 +36,6 @@ module.exports = (robot) ->
 （＿フ彡             / ←>> @#{msg.message.user.name}
 ```
   ""
-  
-  seieki = ["http://astamuse.com/ja/drawing/JP/031/99/780/A/000007.png", "http://www.hiroshima-cu.ac.jp/doctor/health/sei/sei7.jpg", "https://upload.wikimedia.org/wikipedia/commons/d/db/Male_reproductive_system_lateral_ja.png"]
-
-  robot.respond /精液たまり/, (msg) ->
-    msg.send msg.reply msg.random seieki
 
 
   # robot.hear /badger/i, (res) ->
