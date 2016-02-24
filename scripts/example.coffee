@@ -24,6 +24,7 @@ module.exports = (robot) ->
   robot.topic (msg) ->
     msg.send 'トピックが変更されました。'
 
+<<<<<<< HEAD
   robot.respond /たまり/, (msg) ->
     msg.send ""
 ```
@@ -37,6 +38,8 @@ module.exports = (robot) ->
 ```
   ""
 
+=======
+>>>>>>> parent of 1dc6b40... たまりcommand追加
 
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
