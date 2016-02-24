@@ -37,7 +37,7 @@ module.exports = (robot) ->
 ```
   """
 
-robot.respond /精液たまり/, (msg) ->
+  robot.respond /精液たまり/, (msg) ->
     msg.send msg.reply "http://www.hiroshima-cu.ac.jp/doctor/health/sei/sei7.jpg"
 
 
