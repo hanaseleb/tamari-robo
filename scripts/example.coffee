@@ -10,6 +10,21 @@
 
 module.exports = (robot) ->
 
+
+
+  enterReplies = ['コンニチハ', 'タマリロボデス', 'ヨウコソ', 'ハロー', 'オハヨウゴザイマス', 'イラッシャイマセ']
+  leaveReplies = ['イッチャウノ？', 'サミシイ', 'マタコンド']
+  
+  robot.enter (res) ->
+    res.send res.reply res.random enterReplies
+
+  robot.leave (res) ->
+    res.send res.reply res.random leaveReplies
+
+  robot.topic (msg) ->
+    msg.send 'トピックが変更されました。'
+
+
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
